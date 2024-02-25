@@ -8,7 +8,7 @@ const SingleProductPage = ({ params }: {
     return (
         <div>
             <h1>Single product details</h1>
-            <p>Product id {params.productId}</p>
+            <h2>Product id = {params.productId}</h2>
         </div>
     );
 };
