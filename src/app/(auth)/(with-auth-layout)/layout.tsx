@@ -5,8 +5,8 @@ export default function AuthLayout({
     children: React.ReactNode
 }) {
     return (
-        <div className="bg-green-500 p-5">
-            <p>This is a custom Auth layout.</p>
+        <div className="bg-slate-200 p-5">
+            <p>This is a with auth layout.</p>
             {children}
         </div>
     )
