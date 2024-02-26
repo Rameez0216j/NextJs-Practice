@@ -1,0 +1,4 @@
+This is a private folder
+_ (underscore) --> private
+
+This folder will not be considered for routing
