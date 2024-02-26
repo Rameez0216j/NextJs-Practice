@@ -1,1 +1,2 @@
 For grouping routes without affecting the logic
+Every routing folder can have their own layout.tsx and page.tsx files
