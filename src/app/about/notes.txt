@@ -1,0 +1,3 @@
+metadata at layout will apply to all pages contained by that layout
+If the page has a layout it will be applied to only that page
+metadata in page will replace the similar fields in metadata at layout
