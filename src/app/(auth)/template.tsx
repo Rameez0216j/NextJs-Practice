@@ -32,21 +32,11 @@ export default function AuthLayout({
     return (
         <div className="bg-green-500 p-5">
             <p>This is a custom Auth layout.</p>
-            {/* The below input state is persisted on changing the childrens to avoid this remane "layout.tsx" to  "template.tsx" */}
+            {/* The below input state is not persisted on changing the childrens to avoid this remane "template.tsx" to  "layout.tsx" */}
+            {/* Template is wrapped in Layout as well */}
             <div>
-                <input type="text" placeholder="Layout input" value={input} onChange={e => setInput(e.target.value)} />
+                <input type="text" placeholder="Template input" value={input} onChange={e => setInput(e.target.value)} />
             </div>
-            <ul className="flex gap-2 bg-slate-500 mb-4">
-                {
-                    links.map((link, index) => {
-
-                        const isActive = pathname.startsWith(link.link);
-                        return (
-                            <li className={isActive ? "p-2 bg-red-600" : "p-2 bg-red-400"} key={index}><Link href={link.link}>{link.name}</Link></li>
-                        )
-                    })
-                }
-            </ul>
             {children}
         </div>
     )

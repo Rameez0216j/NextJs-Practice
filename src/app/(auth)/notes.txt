@@ -1,3 +1,6 @@
 For grouping routes without affecting the logic
 Every routing folder can have their own layout.tsx and page.tsx files
 layout.tsx also considers the current folder page.tsx file as children if rendered 
+
+Hirarchy:
+Layout --> Template --> Page
