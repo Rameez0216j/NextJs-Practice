@@ -11,7 +11,7 @@ const ReviewForProduct = ({ params }: {
 
 }) => {
     const Random=getRandomInt(2);
-    if(Random<1) throw new Error("Error:Loading review")
+    if(Random===1) throw new Error("Error in Loading review")
 
     return (
         <div>
