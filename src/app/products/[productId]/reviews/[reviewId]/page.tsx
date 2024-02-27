@@ -1,4 +1,7 @@
 import React from "react";
+function getRandomInt(count:number):number {
+    return Math.floor(Math.random() * count);
+}
 
 const ReviewForProduct = ({ params }: {
     params: {
@@ -7,6 +10,9 @@ const ReviewForProduct = ({ params }: {
     }
 
 }) => {
+    const Random=getRandomInt(2);
+    if(Random<1) throw new Error("Error:Loading review")
+
     return (
         <div>
             <h1>Product Id = {params.productId} and Review Id = {params.reviewId}</h1>
