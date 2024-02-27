@@ -15,7 +15,7 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 <header className='bg-pink-500 w-full h-[150px]'>Header</header>
-                <div className='flex items-center justify-center h-[150px] w-full'>
+                <div className='flex items-center justify-center w-full'>
                     {children}
                 </div>
                 <footer className='bg-yellow-500 w-full h-[150px]'>footer</footer>
